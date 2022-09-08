@@ -27,7 +27,7 @@ exports.addUser = async(req,res)=>{
         
         // send token in email
         // const url = `http://localhost:5000/api/verifyUser/${token.token}`
-        const url = `http://localhost:3000/confirmEmail/${token.token}`
+        const url = `https://onlineshopdemo.netlify.app/confirmEmail/${token.token}`
 
         sendEmail({
             from: "noreply@something.com",
@@ -100,7 +100,7 @@ exports.resendConfirmation = async (req, res) => {
     
     // send token in email
     // const url = `http://localhost:5000/api/verifyUser/${token.token}`
-    const url = `http://localhost:3000/confirmEmail/${token.token}`
+    const url = `https://onlineshopdemo.netlify.app/${token.token}`
 
     sendEmail({
         from: "noreply@something.com",
